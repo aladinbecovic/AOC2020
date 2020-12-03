@@ -2,10 +2,10 @@
 
 using namespace std;
 
-vector<string> input_vector;
-
 int main(){
+    vector<string> input_vector;
     std::string line;
+
     while (std::getline(std::cin, line))
     {
         input_vector.push_back(line);
