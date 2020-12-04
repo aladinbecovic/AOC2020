@@ -3,10 +3,10 @@
 using namespace std;
 
 
-vector<int> input_vector;
-
 int main(){
     std::string line;
+    vector<int> input_vector;
+
     while (std::getline(std::cin, line))
     {
         std::cout << line << std::endl;

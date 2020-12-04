@@ -8,7 +8,7 @@ int main(){
     char col, dash, find_char;
     int v1, v2;
     string str;
-    int sum;
+    int sum = 0;
 
     std::string line;
     while (std::getline(std::cin, line))
