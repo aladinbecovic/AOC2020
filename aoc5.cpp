@@ -56,23 +56,18 @@ int main(){
                     }
                     break;
             }
-            //cout << "a: " << a << " b: " << b << endl;
         }
-        //cout << row << " ";
-        //cout << col << endl;
         seat_list[row][col] = 'X';
         curr_id = row * 8 + col;
         if(curr_id > max_id){
             max_id = curr_id;
         }
     } 
-    //cout << max_id << endl;
     for(int r = 0; r < 128; r++){
         for(int c = 0; c < 8; c++){
             if(seat_list[r][c] != 'X'){
                 seat_list[r][c] = 'O';
             }
-            //cout << seat_list[r][c];
             if(seat_list[r][c] == 'O' && seat_list[r][c-1] == 'X'){
                 cout << (r*8+c) << endl;
             }
